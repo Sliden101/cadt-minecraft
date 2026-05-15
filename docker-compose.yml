@@ -1,0 +1,18 @@
+services:
+  mc:
+    build: .
+    environment:
+      EULA: "TRUE"
+      VERSION: 1.21.11 
+      TYPE: "PAPER"
+      ONLINE_MODE: "false"
+    volumes:
+      - ./mc-data:/data
+    working_dir: /dat
+    ports:
+      - "25565:25565"
+      - "24454:24455/udp"
+      - "19132:19132/udp"
+    stdin_open: true
+    tty: true
+
