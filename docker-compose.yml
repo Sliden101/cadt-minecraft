@@ -6,6 +6,7 @@ services:
       VERSION: 1.21.11 
       TYPE: "PAPER"
       ONLINE_MODE: "false"
+      MEMORY: 8G
     volumes:
       - ./mc-data:/data
     working_dir: /dat
